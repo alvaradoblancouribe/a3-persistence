@@ -2,7 +2,9 @@
 
 ## to do list 
 
-https://to-do-list-1234556.herokuapp.com/ and https://a3-alvaradoblancouribe.glitch.me/ 
+update: I attended office hours with Proffessor Roberts and he helped me debug my code. I updated the repository with the changed code. 
+
+https://to-do-list-1234556.herokuapp.com/ and https://a3-alvaradoblancouribe.glitch.me/logIn.html 
 
 the goal of this application is to create a to-do list for students 
 

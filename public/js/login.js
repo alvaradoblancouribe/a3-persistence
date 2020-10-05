@@ -8,6 +8,7 @@ const login=function(e){
       headers:{
         'Content-Type': 'application/json;charset=utf-8'
       },
+      credentials: 'include',
       body: body
     })
     .then(response=> response.json())

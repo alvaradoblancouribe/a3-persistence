@@ -1,26 +1,6 @@
 
 //post request to replace an existing task
 
-const login=function(e){
-  const email = document.querySelector('#inputEmail'),
-        password= document.querySelector('#inputPassword'),
-        json = {username: email.value, password:password.value},
-        body = JSON.stringify(json)
-  fetch('/login',{
-    method:'POST',
-    headers:{
-      'Content-Type': 'application/json;charset=utf-8'
-    },
-    body: body
-  })
-  .then(function(response){
-    console.log("this worked??")
-    //window.location.assign('/newPath')
-  })
-  return false;
-}
-
-
 const replaceData= function(e){
   const taskName = document.querySelector('#taskName'),
           taskHours= document.querySelector('#expected'),
@@ -129,7 +109,7 @@ const showData = function( e ){
     })
    .then( response=> response.json())
    .then(json=>{
-      jsonUpdated=json
+      var jsonUpdated=json
       var list = document.createElement("li")
       var h6 = document.createElement("b");
       var li = document.createElement("p");
@@ -179,6 +159,4 @@ const showData = function( e ){
     deleteButton.onclick = deleteData
     const replaceButton= document.getElementById('replace')
     replaceButton.onclick = replaceData
-    const loginButton = document.getElementById('login')
-    loginButton.onclick= login
   }
